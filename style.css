@@ -9,7 +9,7 @@
 }
 
 :root {
-    --body-bg-color: #121214;
+    --body-bg-color: #111113;
     --text-color: #E1E1E6;
     --title-color: #04D361;
     --form-color: #A8A8A8;
@@ -25,11 +25,13 @@ body {
     background: url(assets/read_news.jpg) var(--body-bg-color) no-repeat fixed right / contain;
     font-family: 'Spartan';
     font-size: 14px;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
-    width: 50%;
-    height: 100vh;
+    width: 50vw;
+    height: 100%;
     background-color: var(--body-bg-color);
     display: flex;
     flex-direction: column;
@@ -110,3 +112,15 @@ article aside a img {
    background-color: var(--bg-button-color);
 }
 
+@media screen and (max-width:960px) {
+    body {
+        background: url(assets/read_news.jpg) var(--body-bg-color) no-repeat fixed top right/ 100%;
+    }
+    main {
+        width: 100vw;
+        background-color: rgba(17, 17, 19, 0.8);
+    }
+    article #email-input {
+        width: 70vw;
+    }
+}
