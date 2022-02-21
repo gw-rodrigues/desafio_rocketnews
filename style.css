@@ -15,3 +15,98 @@
     --form-color: #A8A8A8;
     --bg-button-color: #8257e5;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background: url(assets/read_news.jpg) var(--body-bg-color) no-repeat fixed right / contain;
+    font-family: 'Spartan';
+    font-size: 14px;
+}
+
+main {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+header, article, section {
+    margin: 3rem 0;
+}
+
+header img {
+    width: 60%;
+}
+
+article {
+    flex: 1;
+    color: var(--form-color);
+}
+
+article h1 {
+    font-family: 'Work Sans';
+    font-size: 24px;
+    color: var(--title-color);
+    margin: 1rem 0;
+}
+
+article p:first-of-type {
+    color: var(--text-color);
+    margin: 1rem 0;
+}
+
+article a {
+    color: var(--bg-button-color);
+    text-decoration: none;
+}
+
+article #email-input {
+    width: 55vw;
+    height: 48px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+article #email-input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-left:5px solid #04D361;
+    padding: 0.5rem;
+    color: var(--form-color);
+}
+
+article #email-input button {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: -45px;
+    cursor: pointer;
+    background-color: var(--bg-button-color);
+   border: none;
+}
+
+article #email-input button img {
+    width: 50%;
+    vertical-align: middle;
+    color: white;
+}
+
+article aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+article aside a img {
+   height: 24px;
+   width: auto;
+   background-color: var(--bg-button-color);
+}
+

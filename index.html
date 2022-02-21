@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/logo.svg" alt="Rocket News">
-    </header>
     <main>
+        <header>
+            <img src="assets/logo.svg" alt="Rocket News">
+        </header>
         <article>
             <h1>atualize ideias e informações em 5 minutos.</h1>
-            <p>tudo que você precisa saber para começar seu dia bem e informado</p>
+            <p><strong>tudo que você precisa saber para começar seu dia bem e informado</strong></p>
             <p>noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.
                 perfeito para se preparar para codar ☕</p>
             <section class="email-form">
-                <form action="index.html">#
+                <form action="index.html">
                     <label for="email">Insira seu e-mail:</label>
-                    <input type="email" name="email" id="email">
+                    <br>
+                    <div id="email-input">
+                        <input type="email" name="email" id="email" value="oi@rocketseat.com" onclick="() => {console.log('adwd') };">
+                        <button type="submit">
+                            <img src="assets/send.svg" alt="Subscribe">
+                        </button>
+                    </div>
                 </form>
             </section>
-            <aside class="more-info">
+            <aside>
                 <a href="#">
-                    deixe-me ler primeiro
+                    <strong>deixe-me ler primeiro</strong>
                     <img src="assets/arrow-right.svg" alt="go">
                 </a>
             </aside>
